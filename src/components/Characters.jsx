@@ -1,26 +1,37 @@
 import React from 'react';
 import photo from '../photo.png'
 import { } from '../css/App.css'
-import * as BiIcons from 'react-icons/bi';
 
 
-export default function Characters(){
-    return(
+export default function Characters(props) {
+    const { personagem } = props
+
+    return (
         <>
             <div className="personagem">
                 <section className="foto">
-                    <img src={photo} alt="" />
-                    <p>Name</p>
+                    <img src={personagem.thumbnail.path} alt="" />
+                    <p>{personagem.name}</p>
                 </section>
                 <section className="serie">
-                    <p>Serie 1</p>
-                    <p>Serie 2</p>
-                    <p>Serie 3</p>
+                    {
+                        Array(3).fill(0).map((el, i) => {
+                            return <p>{personagem.series.available > i
+                                ? personagem.series.items[i].name
+                                : ""
+                            }</p>
+                        })
+                    }
                 </section>
                 <section className="evento">
-                    <p>Evento 1</p>
-                    <p>Evento 1</p>
-                    <p>Evento 1</p>
+                    {
+                        Array(3).fill(0).map((el, i) => {
+                            return <p>{personagem.events.available > i
+                                ? personagem.events.items[i].name
+                                : ""
+                            }</p>
+                        })
+                    }
                 </section>
             </div>
 

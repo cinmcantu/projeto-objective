@@ -5,9 +5,10 @@
     margin: 0;
     padding: 0;
     font-family: 'PT Sans Caption';
-    color: #555555;
 }
-
+.invisible{
+    display: none;
+}
 header{
     height: 65px;
     display: flex;
@@ -19,6 +20,9 @@ header{
     display: flex;
     align-items: center;
     height: 100%;
+}
+.candidato-info>div{
+    display: flex;
 }
 .candidato-info p{
     margin: 0 5px;
@@ -32,8 +36,8 @@ header{
 }
 main{
     background-color: #E5E5E5;
-    height: 83vh;
     padding: 50px 10vw;
+    color: #555555;
 }
 .title{
     font-size: 32px;
@@ -47,6 +51,7 @@ main{
     border: none;
     height: 32px;
     padding-left: 10px;
+    width: 50%;
 }
 button{
     background-color: #fff;
@@ -62,10 +67,14 @@ button svg{
     align-items: center;
     justify-content: center;
     padding: 2vh;
+    background-color: #fff;
 }
 .pagination svg{
     font-size: 1.7rem;
     color: #8E8E8E;
+}
+.pagination svg:hover{
+    color: #167ABC;
 }
 .page-box{
     display: flex;
@@ -82,14 +91,14 @@ button svg{
     font-size: 1rem;
 }
 .page-box:hover{
-    background: #167ABC;
+    background-color: #167ABC;
     border: 1px solid #167ABC;
     color: #fff;
 }
 
 .cabecalho{
     display: flex;
-    margin-top: 3vh;
+    margin-top: 6vh;
     margin-bottom: 10px;
     font-size: 12px;
     width: 100%;
@@ -105,6 +114,7 @@ button svg{
     color: #555555;
     font-size: 14px;
     padding: 20px 0 ;
+    margin: 20px 0;
 }
 .foto{
     display: flex;
@@ -118,4 +128,29 @@ button svg{
 }
 .personagem>section:first-child, .cabecalho>p:first-child{
     padding-left: 20px;
+}
+
+@media only screen and (max-width: 700px) {
+    main{
+        text-align: center;
+    }
+    
+    .serie, .evento{
+        display: none;
+    }
+    .foto{
+        width: 100%;
+    }
+    p.foto{
+        text-align: center;
+        margin-left: 13vw;
+    }
+    .pesquisa input{
+        width: 90%;
+    }
+    .candidato-info>div{
+        flex-direction: column;
+        text-align: right;
+        margin-right: 10px;
+    }
 }

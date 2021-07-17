@@ -10,8 +10,10 @@ export default function Header(){
                 <img src={logo} alt="" width="100" />
             </div>
             <div className="candidato-info">
-                <p><strong>Cinthia Miranda Cantu</strong></p>
-                <p>Teste de Front-end</p>
+                <div>
+                    <p><strong>Cinthia Miranda Cantu</strong></p>
+                    <p>Teste de Front-end</p>
+                </div>
                 <p className="box">CB</p>
             </div>
         </header>
