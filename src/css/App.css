@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Caption&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans Caption';
+    color: #555555;
+}
+
+header{
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.candidato-info{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.candidato-info p{
+    margin: 0 5px;
+    font-size: 0.8rem;
+}
+.box{
+    background-color: #F5F5F5;
+    font-weight: bold;
+    padding: 3px;
+    border-radius: 2px;
+}
+main{
+    background-color: #E5E5E5;
+    height: 83vh;
+    padding: 50px 10vw;
+}
+.title{
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+.sub-title{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.pesquisa input{
+    border: none;
+    height: 32px;
+    padding-left: 10px;
+}
+button{
+    background-color: #fff;
+    height: 32px;
+    border: none;
+    padding: 0 10px;
+}
+button svg{
+    font-size: 14px;
+}
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2vh;
+}
+.pagination svg{
+    font-size: 1.7rem;
+    color: #8E8E8E;
+}
+.page-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F5F5F5;
+    border: 1px solid #E5E5E5;
+    color: #555555;
+    padding: 2px;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    margin: 0 7px;
+    font-size: 1rem;
+}
+.page-box:hover{
+    background: #167ABC;
+    border: 1px solid #167ABC;
+    color: #fff;
+}
+
+.cabecalho{
+    display: flex;
+    margin-top: 3vh;
+    margin-bottom: 10px;
+    font-size: 12px;
+    width: 100%;
+    color: #8E8E8E;
+}
+.personagem{
+    display: flex;
+    justify-content: space-between;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 5px #00000033;
+    border-radius: 4px;
+    width: 100%;
+    color: #555555;
+    font-size: 14px;
+    padding: 20px 0 ;
+}
+.foto{
+    display: flex;
+    align-items: center;
+}
+.foto p{
+    margin-left: 20px;
+}
+.personagem>section, .cabecalho>p{
+    width: 33%;
+}
+.personagem>section:first-child, .cabecalho>p:first-child{
+    padding-left: 20px;
+}
