@@ -21,6 +21,11 @@ Abra o terminal (Linux/Mac) ou o PowerShell (Windowns) e siga os passos abaixo.
 
     `npm install`
 
+* Para iniciar os projetos use o comando abaixo
+
+    `npm start`
+
+Antes de iniciar o projeto, é necessário setar as váriaveis de ambiemte para utilizar a API. O passo a passo para esse processo está descrito abaixo.
 
 ---
 
