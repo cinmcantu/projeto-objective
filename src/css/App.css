@@ -1,82 +1,97 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans+Caption&display=swap');
-
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'PT Sans Caption';
 }
-.invisible{
+
+.invisible {
     display: none;
 }
-header{
+
+header {
     height: 65px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
 }
-.candidato-info{
+
+.candidato-info {
     display: flex;
     align-items: center;
     height: 100%;
 }
-.candidato-info>div{
+
+.candidato-info>div {
     display: flex;
 }
-.candidato-info p{
+
+.candidato-info p {
     margin: 0 5px;
     font-size: 0.8rem;
 }
-.box{
+
+.box {
     background-color: #F5F5F5;
     font-weight: bold;
     padding: 3px;
     border-radius: 2px;
 }
-main{
+
+main {
     background-color: #E5E5E5;
     padding: 50px 10vw;
     color: #555555;
 }
-.title{
+
+.title {
     font-size: 32px;
     margin-bottom: 10px;
 }
-.sub-title{
+
+.sub-title {
     font-size: 16px;
     margin-bottom: 10px;
 }
-.pesquisa input{
+
+.pesquisa input {
     border: none;
     height: 32px;
     padding-left: 10px;
     width: 50%;
 }
-button{
+
+button {
     background-color: #fff;
     height: 32px;
     border: none;
     padding: 0 10px;
 }
-button svg{
+
+button svg {
     font-size: 14px;
 }
-.pagination{
+
+.pagination {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 2vh;
     background-color: #fff;
 }
-.pagination svg{
+
+.pagination svg {
     font-size: 1.7rem;
     color: #8E8E8E;
 }
-.pagination svg:hover{
+
+.pagination svg:hover {
     color: #167ABC;
 }
-.page-box{
+
+.page-box {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,13 +105,18 @@ button svg{
     margin: 0 7px;
     font-size: 1rem;
 }
-.page-box:hover{
+
+.pagination a {
+    text-decoration: none;
+}
+
+.page-box:hover {
     background-color: #167ABC;
     border: 1px solid #167ABC;
     color: #fff;
 }
 
-.cabecalho{
+.cabecalho {
     display: flex;
     margin-top: 6vh;
     margin-bottom: 10px;
@@ -104,7 +124,8 @@ button svg{
     width: 100%;
     color: #8E8E8E;
 }
-.personagem{
+
+.personagem {
     display: flex;
     justify-content: space-between;
     background: #FFFFFF;
@@ -113,44 +134,128 @@ button svg{
     width: 100%;
     color: #555555;
     font-size: 14px;
-    padding: 20px 0 ;
+    padding: 20px 0;
     margin: 20px 0;
 }
-.foto{
+
+.foto {
     display: flex;
     align-items: center;
 }
-.foto p{
+
+.foto p {
     margin-left: 20px;
 }
-.personagem>section, .cabecalho>p{
+
+.personagem>section, .cabecalho>p {
     width: 33%;
 }
-.personagem>section:first-child, .cabecalho>p:first-child{
+
+.personagem>section:first-child, .cabecalho>p:first-child {
     padding-left: 20px;
 }
 
-@media only screen and (max-width: 700px) {
-    main{
+.loading {
+    text-align: center;
+    margin: 25vh;
+}
+
+.details {
+    background-color: #E5E5E5;
+    padding: 50px 10vw;
+    color: #555555;
+    min-height: 90vh;
+}
+
+.details h1 {
+    margin-bottom: 3vh;
+    text-align: center;
+}
+
+.details>section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.comics {
+    padding: 0vw 5vw;
+}
+
+.comics p {
+    font-size: 1.2rem;
+}
+
+div.btn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-voltar {
+    margin-top: 2vh;
+    background-color: #555555;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.btn-voltar a {
+    margin-top: 3vh;
+    background-color: #555555;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 20px;
+}
+
+a.char-link {
+    text-decoration: none;
+}
+
+.comics ul {
+    line-height: 1.5;
+    font-size: 1rem;
+    padding-left: 50px;
+}
+
+.description {
+    width: 300px;
+}
+
+@media only screen and (max-width: 900px) {
+    main {
         text-align: center;
     }
-    
-    .serie, .evento{
+    .serie, .evento {
         display: none;
     }
-    .foto{
+    .foto {
         width: 100%;
     }
-    p.foto{
+    p.foto {
         text-align: center;
         margin-left: 13vw;
     }
-    .pesquisa input{
+    .pesquisa input {
         width: 90%;
     }
-    .candidato-info>div{
+    .candidato-info>div {
         flex-direction: column;
         text-align: right;
         margin-right: 10px;
+    }
+    .details h1 {
+        text-align: center;
+    }
+    .details>section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .comics {
+        padding: 5vw 7vw;
+    }
+    .comics p {
+        line-height: 1.7;
+        font-size: 1.2rem;
     }
 }

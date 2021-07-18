@@ -10,7 +10,7 @@
 
 # production
 /build
-src/objeto.js
+
 
 # misc
 .DS_Store

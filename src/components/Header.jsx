@@ -2,8 +2,8 @@ import React from 'react';
 import logo from '../logo.png'
 import { } from '../css/App.css'
 
-export default function Header(){
-    return(
+export default function Header() {
+    return (
 
         <header>
             <div className="logo">

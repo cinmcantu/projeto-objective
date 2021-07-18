@@ -1,13 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { } from '../css/App.css'
 import Characters from './Characters';
-import {resp} from '../objeto'
 
+export default function CharactersTable(props) {
+    const { personagens } = props
 
-export default function CharactersTable(){
-    const personagens = resp.data.results
-
-    return(
+    return (
         <>
             <div className="cabecalho">
                 <p className="foto">Personagem</p>
@@ -15,11 +13,11 @@ export default function CharactersTable(){
                 <p className="evento">Eventos</p>
             </div>
             {
-                Array(10).fill(0).map((elem, i)=>{
-                    return <Characters key={personagens[i].id}  personagem={personagens[i]} />
+                Array(personagens.length).fill(0).map((elem, i) => {
+                    return <Characters key={i} personagem={personagens[i]} />
                 })
             }
-           
+
         </>
     )
 }
