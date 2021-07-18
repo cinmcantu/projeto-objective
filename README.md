@@ -1,7 +1,6 @@
-# Projeto Objective - Code Hero
+# Projeto - Code Hero
 
-Projeto desenvolvido para teste de Front-end na Objective
-O teste consiste em criar uma aplicação responsiva que apresenta uma lista com os personagens da Marvel® e algumas informações sobre eles.
+O projeto consiste em criar uma aplicação responsiva que apresenta uma lista com os personagens da Marvel® e algumas informações sobre eles.
 
 Para a realização do projeto foi utilizada a api disponibilizada pela Marvel®, podendo ser encontrada aqui <https://developer.marvel.com/>, além de um protótipo enviado pela empresa.
 
